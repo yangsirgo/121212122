@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <a href="#" onclick="window.open('http://www.baidu.com')">asdfas</a>
+</body>
+</html>
+<script type="text/javascript">
+      function repalceStr(str){
+        if(str.indexOf("/")==="-1"||str.indexOf("\\")==="-1")return;
+        for (var i=0;i<str.length;i++){
+            if(str[i]==='/'||str[i]==='\\'){
+                str[i] = '';
+            }
+        }
+        return str;
+    }
+
+  console.log(repalceStr("\/\/\\/a"))
+</script>
